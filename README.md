@@ -1,5 +1,5 @@
 # Sentiment
-A Rust-based web service for sentiment analysis. In this project, I operationalized machine learning by serving an open-source model through a web service developed in Rust. This involves monitoring, metrics collection, and containerizing the service for deployment on Kubernetes.
+A Rust-based web service for sentiment analysis (migrated from my gitlab account). In this project, I operationalized machine learning by serving an open-source model through a web service developed in Rust. This involves monitoring, metrics collection, and containerizing the service for deployment on Kubernetes.
 
 ## Tech Stack
 1. Rust
