@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: idsfinal-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: idsfinal
+  template:
+    metadata:
+      labels:
+        app: idsfinal
+    spec:
+      containers:
+      - name: idsfinal
+        image: lyuanzhi/idsfinal:v1
+        ports:
+        - containerPort: 8080
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: idsfinal-service
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+    targetPort: 8080
+  selector:
+    app: idsfinal
