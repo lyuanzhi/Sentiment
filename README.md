@@ -7,7 +7,8 @@ A Rust-based web service for sentiment analysis (migrated from my gitlab account
 3. Kubernetes
 
 ## Demo
-[http://34.171.102.203/sentiment?text=I%20am%20sad](http://34.171.102.203/sentiment?text=I%20am%20sad)
+~~http://34.171.102.203/sentiment?text=I%20am%20sad~~
+**GKE is too expensive so I disabled it.**
 
 ## Create Rust Web Service
 1. cargo new idsfinal
